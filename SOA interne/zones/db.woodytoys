@@ -1,0 +1,21 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     ns.woodytoys. admin.woodytoys. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; NS Records
+        IN      NS      ns.woodytoys.
+
+; name servers A records
+ns.woodytoys.   IN      A       172.17.0.3
+
+; hosts A records
+erp.woodytoys.  IN      A       172.17.0.2
+
+
+

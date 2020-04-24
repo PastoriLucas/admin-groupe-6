@@ -1,0 +1,5 @@
+zone "wt2-6.ephec-ti.be" {
+	type forward;
+	forwarders {172.17.0.3;};
+	forward only;
+};
