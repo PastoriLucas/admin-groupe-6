@@ -1,0 +1,17 @@
+
+//
+// Fo any local configuration here
+//
+
+// consider adding the 1918 zone here, if they are not used in your 
+// organizaiton
+//include "/etc/bind/zones.rfc1918";
+
+
+view external {
+	match-clients { any; };
+	zone "wt2-1.ephec-ti.be" {
+		type master;
+		file "/etc/bind/db.wt2-1.ephec-ti.be";
+	};
+};
